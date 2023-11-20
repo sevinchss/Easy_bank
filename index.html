@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easybank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+
+    <script>
+
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    padding: {
+                        DEFAULT: '1.5rem',
+                        '2xl': '1.5rem',
+                    },
+                },
+                extend: {
+                    backgroundImage: {
+        'line': "url(images/Rectangle.png)",
+        'footer-texture': "url()",
+      },
+                    colors: {
+                        linear1: '#33D35E',
+                        linear2: '#2AB6D9',
+                        green: '#30C88F',
+                        blue: '#2D314D',
+                        gray: '#9597A5',
+                        gray1: '#f4f5f7',
+
+                    }
+                },
+                fontFamily: {
+                    'sans': 'Public Sans',
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body class="font-Publicsans p-0 m-0">
+    <header class="sticky top-0 bg-white z-50">
+        <div class="container flex items-center justify-between py-8">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20" viewBox="0 0 139 20" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M91.2953 15.8461C94.7957 15.8461 97.2683 13.3312 97.2683 9.79811C97.2683 6.26505 94.7957 3.75032 91.2953 3.75032C90.2439 3.75053 89.2839 4.03158 88.4702 4.53411V0H84.5991V15.4737H87.4967L87.866 14.6297C88.7896 15.4013 89.9685 15.8461 91.2953 15.8461ZM64.6904 15.8461C67.7113 15.8463 69.7163 14.2916 69.7163 11.9158C69.7163 9.08169 67.4088 8.67295 65.6245 8.3569L65.5328 8.34063L65.5103 8.33662C64.4407 8.14588 63.5833 7.99298 63.5833 7.35053C63.5833 6.82358 64.005 6.51284 64.6328 6.51284C65.3422 6.51284 65.8302 6.85032 65.8302 7.57621H69.4972C69.4525 5.27263 67.5763 3.73263 64.6814 3.73263C61.7685 3.73263 59.8266 5.20379 59.8266 7.48253C59.8266 10.2398 62.1635 10.7718 63.9262 11.0575C65.0184 11.2381 65.8791 11.4251 65.8791 12.0808C65.8791 12.6684 65.3361 12.9606 64.7633 12.9606C64.0208 12.9606 63.442 12.5779 63.442 11.7465H59.673C59.7088 14.2097 61.5919 15.8461 64.6904 15.8461ZM43.7058 11.6309C42.9058 14.2255 40.606 15.8465 37.7538 15.8465C34.2066 15.8465 31.5789 13.2539 31.5789 9.78084C31.5789 6.29558 34.1856 3.73284 37.7538 3.73284C41.4182 3.73284 43.9555 6.34716 43.9553 9.68211C43.9553 10.0246 43.9254 10.3672 43.8744 10.7187H35.433C35.6892 12.0227 36.5174 12.6971 37.7538 12.6971C38.6685 12.6971 39.4328 12.2964 39.8092 11.6309H43.7058ZM35.502 8.55032H40.0978C39.7542 7.4141 38.9353 6.80105 37.7536 6.80105C36.6123 6.80105 35.8189 7.42105 35.502 8.55032ZM51.0439 15.8463C52.3643 15.8463 53.5433 15.4118 54.4742 14.6577L54.8096 15.4617H57.8368V4.09326L54.9182 4.09305L54.5176 4.97221C53.5789 4.19768 52.3829 3.75053 51.0439 3.75053C47.5677 3.75053 45.0829 6.25642 45.0829 9.77726C45.0829 13.3103 47.5677 15.8463 51.0439 15.8463ZM49.0226 9.78632C49.0226 11.2709 50.1008 12.3792 51.5675 12.3792C53.0342 12.3792 54.1123 11.2709 54.1123 9.78632C54.1123 8.31074 53.0342 7.20253 51.5675 7.20253C50.0919 7.20253 49.0226 8.31074 49.0226 9.78632ZM78.6675 14.9678C77.1351 18.4472 75.7264 19.704 72.7911 19.704H71.4502V16.3394H72.5271C74.0252 16.3394 74.477 15.9493 75.0075 14.5345L70.3096 4.10526H74.5648L76.9774 10.3678L79.2256 4.10526H83.4323L78.6675 14.9678ZM88.2266 9.79811C88.2266 11.2705 89.3048 12.3787 90.7715 12.3787C92.2292 12.3787 93.3163 11.2705 93.3163 9.79811C93.3163 8.31347 92.2382 7.20526 90.7715 7.20526C89.3048 7.20526 88.2266 8.31347 88.2266 9.79811ZM104.37 15.8463C105.691 15.8463 106.87 15.4118 107.801 14.6577L108.136 15.4617H111.163V4.09326L108.245 4.09305L107.844 4.97221C106.905 4.19768 105.709 3.75053 104.37 3.75053C100.894 3.75053 98.4092 6.25642 98.4092 9.77726C98.4092 13.3103 100.894 15.8463 104.37 15.8463ZM102.349 9.78632C102.349 11.2709 103.427 12.3792 104.894 12.3792C106.361 12.3792 107.439 11.2709 107.439 9.78632C107.439 8.31074 106.361 7.20253 104.894 7.20253C103.418 7.20253 102.349 8.31074 102.349 9.78632ZM117.546 15.4737V9.40295C117.546 7.956 118.249 7.10316 119.47 7.10316C120.455 7.10316 120.953 7.75958 120.953 9.08274V15.4737H124.868V8.54169C124.868 5.64526 123.134 3.76905 120.494 3.76905C119.024 3.76905 117.762 4.33432 116.916 5.27747L116.378 4.10526H113.631V15.4737H117.546ZM131.295 10.6661V15.4737H127.379V0H131.295V8.55895L134.003 4.10526H138.4L134.857 9.52358L138.759 15.4737H134.142L131.295 10.6661Z"
+                        fill="#2D314D" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8025 0L0 19.704H5.98608L16.7885 0H10.8025Z"
+                        fill="url(#paint0_linear_0_2364)" />
+                    <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M18.1709 0L7.36841 19.704H13.3545L24.157 0H18.1709Z" fill="url(#paint1_linear_0_2364)" />
+                    <path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M25.5393 0L14.7368 19.704H20.7229L31.5254 0H25.5393Z" fill="url(#paint2_linear_0_2364)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_0_2364" x1="5.13267" y1="-7.42211" x2="-10.1946" y2="9.91277"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#33D35E" />
+                            <stop offset="1" stop-color="#2AB6D9" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_0_2364" x1="12.5011" y1="-7.42211" x2="-2.82619" y2="9.91277"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#33D35E" />
+                            <stop offset="1" stop-color="#2AB6D9" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_0_2364" x1="19.8695" y1="-7.42211" x2="4.54222" y2="9.91277"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#33D35E" />
+                            <stop offset="1" stop-color="#2AB6D9" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <ul class="hidden lg:flex gap-7">
+                <li class="li flex flex-col h-5 items-center w-12 cursor-pointer">
+                    Home</li>
+                <li class="li flex flex-col h-5 items-center w-12 cursor-pointer">
+                    About</li>
+                <li class="li flex flex-col h-5 items-center w-12 cursor-pointer">
+                    Contact</li>
+                <li class="li flex flex-col h-5 items-center w-12 cursor-pointer">
+                    Blog</li>
+                <li class="li flex flex-col h-5 items-center w-12 cursor-pointer">
+                    Careers</li>
+            </ul>
+            <div class="hidden lg:inline-block">
+                <button
+                    class="bg-gradient-to-br text-white px-9 py-2 rounded-3xl from-linear1 to-linear2 hover:brightness-125">Request
+                    Invite</button>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="11" viewBox="0 0 24 11" fill="none"
+                class="inline-block lg:hidden">
+                <rect width="24" height="1" fill="#2D314D" />
+                <rect y="5" width="24" height="1" fill="#2D314D" />
+                <rect y="10" width="24" height="1" fill="#2D314D" />
+            </svg>
+        </div>
+    </header>
+    <main class="bg-[#fafafa]">
+        <section>
+            <div class="container flex flex-col items-center lg:flex-row -mt-28 md:-mt-48 overflow-x-hidden lg:mt-0">
+                <div class="lg:hidden">
+                    <img src="./images/phones-mobile.png" class="w-[200%] max-w-screen-2xl" \>
+                </div>
+                <div class="items-center text-gray flex flex-col w-1/2 gap-4 lg:items-start">
+                    <h1 class="text-blue font-normal text-5xl text-center lg:text-start">Next generation digital banking
+                    </h1>
+                    <div class="flex items-center flex-col gap-8 lg:items-start">
+                        <span class="text-center lg:text-start">
+                            Take your financial life online. Your Easybank account will be a
+                            one-stop-shop for spending, saving, budgeting, investing, and
+                            much more.
+                        </span>
+                        <button
+                            class="bg-gradient-to-br text-white px-9 py-2 rounded-3xl  from-linear1 to-linear2 hover:brightness-125">Request
+                            Invite</button>
+                    </div>
+                </div>
+                <img src="./images/bg-desktop-phones.png" alt="" class="hidden lg:inline-block w-3/5">
+            </div>
+        </section>
+
+        <section class="bg-primary-dark p-10 xl:p-28">
+            <div class="container">
+                <div class="pb-10 lg:pb-20 md:w-1/2 text-center md:text-left items-center">
+                    <h2 class="text-4xl pb-6 ">Why choose Easybank?</h2>
+                    <p class="text-gray-500">We leverage Open Banking to turn your bank account into your financial hub.
+                        Control your finances like never before.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-5">
+                    <div class="flex flex-col items-center md:items-start lg:py-0">
+                        <img src="./images/icon-online.svg" alt="credit card">
+                        <h3 class="text-2xl py-6">Online Banking</h3>
+                        <p class="text-gray-500 text-center md:text-left">Our modern web and mobile applications allow
+                            you to keep track of your finances wherever you are in the world.</p>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start lg:py-0">
+                        <img src="./images/icon-budgeting.svg" alt="app">
+                        <h3 class="text-2xl py-6">Simple Budgeting</h3>
+                        <p class="text-gray-500 text-center md:text-left">See exactly where your money goes each month.
+                            Receive notifications when you’re close to hitting your limits.</p>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start lg:py-0">
+                        <img src="./images/icon-onboarding.svg" alt="meeting">
+                        <h3 class="text-2xl py-6">Fast Onboarding</h3>
+                        <p class="text-gray-500 text-center md:text-left">We don’t do branches. Open your account in
+                            minutes online and start taking control of your finances right away.</p>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start lg:py-0">
+                        <img src="./images/icon-api.svg" alt="chip">
+                        <h3 class="text-2xl py-6">Open API</h3>
+                        <p class="text-gray-500 text-center md:text-left">Manage your savings, investments, pension, and
+                            much more from one account. Tracking your money has never been easier.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-primary-light p-10 xl:p-28">
+            <div class="container">
+                <h2 class="text-4xl pb-8 text-center md:text-left">Latest Articles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6">
+                    <div class="bg-white rounded-lg pb-10 md:pb-0 hover:shadow-lg transition duration-300">
+                        <img src="./images/image-currency.jpg" alt="currency"
+                            class="rounded-t-lg h-56 md:h-48 w-full object-cover">
+                        <div class="p-4">
+                            <p class="text-gray-500 text-xs pb-3">By Claire Robinson</p>
+                            <h3
+                                class="text-md font-semibold pb-3 hover:text-green transition duration-300 ease-in-out cursor-pointer">
+                                Receive money in any currency with no fees</h3>
+                            <p class="text-sm text-gray-500">The world is getting smaller and we’re becoming more
+                                mobile. So why should you be forced to only receive money in a single …</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg pb-10 md:pb-0 hover:shadow-lg transition duration-300">
+                        <img src="./images/image-restaurant.jpg" alt="restaurant"
+                            class="rounded-t-lg h-56 md:h-48 w-full object-cover">
+                        <div class="p-4">
+                            <p class="text-gray-500 text-xs pb-3">By Wilson Hutton</p>
+                            <h3
+                                class="text-md font-semibold pb-3 hover:text-green transition duration-300 ease-in-out cursor-pointer">
+                                Treat yourself without worrying about money</h3>
+                            <p class="text-sm text-gray-500">Our simple budgeting feature allows you to separate out
+                                your spending and set realistic limits each month. That means you …</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg pb-10 md:pb-0 hover:shadow-lg transition duration-300">
+                        <img src="./images/image-plane.jpg" alt="plane"
+                            class="rounded-t-lg h-56 md:h-48 w-full object-cover">
+                        <div class="p-4">
+                            <p class="text-gray-500 text-xs pb-3">By Wilson Hutton</p>
+                            <h3
+                                class="text-md font-semibold pb-3 hover:text-green transition duration-300 ease-in-out cursor-pointer">
+                                Take your Easybank card wherever you go</h3>
+                            <p class="text-sm text-gray-500">We want you to enjoy your travels. This is why we don’t
+                                charge any fees on purchases while you’re abroad. We’ll even show you …</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg pb-10 md:pb-0 hover:shadow-lg transition duration-300">
+                        <img src="./images/image-confetti.jpg" alt="confetti"
+                            class="rounded-t-lg h-56 md:h-48 w-full object-cover">
+                        <div class="p-4">
+                            <p class="text-gray-500 text-xs pb-3">By Claire Robinson</p>
+                            <h3
+                                class="text-md font-semibold pb-3 hover:text-green transition duration-300 ease-in-out cursor-pointer">
+                                Our invite-only Beta accounts are now live!</h3>
+                            <p class="text-sm text-gray-500">After a lot of hard work by the whole team, we’re excited
+                                to launch our closed beta. It’s easy to request an invite through the site ...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue text-white">
+        <div class="container flex flex-col items-center py-10 gap-8 lg:flex-row lg:justify-between">
+            <div class="flex flex-col items-center gap-8 lg:gap-14 lg:items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20" viewBox="0 0 139 20" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M91.2955 15.8461C94.7959 15.8461 97.2686 13.3312 97.2686 9.79811C97.2686 6.26505 94.7959 3.75032 91.2955 3.75032C90.2442 3.75053 89.2842 4.03158 88.4705 4.53411V0H84.5993V15.4737H87.497L87.8663 14.6297C88.7898 15.4013 89.9688 15.8461 91.2955 15.8461ZM64.6907 15.8461C67.7115 15.8463 69.7166 14.2916 69.7166 11.9158C69.7166 9.08169 67.409 8.67295 65.6248 8.3569L65.533 8.34063L65.5105 8.33662C64.4409 8.14588 63.5835 7.99298 63.5835 7.35053C63.5835 6.82358 64.0052 6.51284 64.633 6.51284C65.3425 6.51284 65.8305 6.85032 65.8305 7.57621H69.4974C69.4528 5.27263 67.5766 3.73263 64.6816 3.73263C61.7688 3.73263 59.8269 5.20379 59.8269 7.48253C59.8269 10.2398 62.1637 10.7718 63.9265 11.0575C65.0187 11.2381 65.8793 11.4251 65.8793 12.0808C65.8793 12.6684 65.3364 12.9606 64.7635 12.9606C64.021 12.9606 63.4423 12.5779 63.4423 11.7465H59.6732C59.709 14.2097 61.5922 15.8461 64.6907 15.8461ZM43.706 11.6309C42.906 14.2255 40.6063 15.8465 37.754 15.8465C34.2069 15.8465 31.5791 13.2539 31.5791 9.78084C31.5791 6.29558 34.1858 3.73284 37.754 3.73284C41.4185 3.73284 43.9557 6.34716 43.9555 9.68211C43.9555 10.0246 43.9256 10.3672 43.8747 10.7187H35.4332C35.6894 12.0227 36.5176 12.6971 37.754 12.6971C38.6688 12.6971 39.433 12.2964 39.8094 11.6309H43.706ZM35.5023 8.55032H40.098C39.7545 7.4141 38.9355 6.80105 37.7538 6.80105C36.6126 6.80105 35.8191 7.42105 35.5023 8.55032ZM51.0442 15.8463C52.3646 15.8463 53.5435 15.4118 54.4745 14.6577L54.8098 15.4617H57.837V4.09326L54.9185 4.09305L54.5178 4.97221C53.5791 4.19768 52.3831 3.75053 51.0442 3.75053C47.5679 3.75053 45.0831 6.25642 45.0831 9.77726C45.0831 13.3103 47.5679 15.8463 51.0442 15.8463ZM49.0229 9.78632C49.0229 11.2709 50.101 12.3792 51.5677 12.3792C53.0345 12.3792 54.1126 11.2709 54.1126 9.78632C54.1126 8.31074 53.0345 7.20253 51.5677 7.20253C50.0922 7.20253 49.0229 8.31074 49.0229 9.78632ZM78.6677 14.9678C77.1353 18.4472 75.7267 19.704 72.7913 19.704H71.4505V16.3394H72.5273C74.0254 16.3394 74.4772 15.9493 75.0077 14.5345L70.3098 4.10526H74.565L76.9776 10.3678L79.2258 4.10526H83.4326L78.6677 14.9678ZM88.2269 9.79811C88.2269 11.2705 89.305 12.3787 90.7717 12.3787C92.2294 12.3787 93.3166 11.2705 93.3166 9.79811C93.3166 8.31347 92.2385 7.20526 90.7717 7.20526C89.305 7.20526 88.2269 8.31347 88.2269 9.79811ZM104.37 15.8463C105.691 15.8463 106.87 15.4118 107.801 14.6577L108.136 15.4617H111.163V4.09326L108.245 4.09305L107.844 4.97221C106.905 4.19768 105.709 3.75053 104.37 3.75053C100.894 3.75053 98.4094 6.25642 98.4094 9.77726C98.4094 13.3103 100.894 15.8463 104.37 15.8463ZM102.349 9.78632C102.349 11.2709 103.427 12.3792 104.894 12.3792C106.361 12.3792 107.439 11.2709 107.439 9.78632C107.439 8.31074 106.361 7.20253 104.894 7.20253C103.418 7.20253 102.349 8.31074 102.349 9.78632ZM117.547 15.4737V9.40295C117.547 7.956 118.249 7.10316 119.47 7.10316C120.456 7.10316 120.953 7.75958 120.953 9.08274V15.4737H124.869V8.54169C124.869 5.64526 123.135 3.76905 120.495 3.76905C119.025 3.76905 117.762 4.33432 116.916 5.27747L116.378 4.10526H113.631V15.4737H117.547ZM131.295 10.6661V15.4737H127.38V0H131.295V8.55895L134.004 4.10526H138.4L134.857 9.52358L138.759 15.4737H134.143L131.295 10.6661Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8025 0L0 19.704H5.98608L16.7885 0H10.8025Z"
+                        fill="url(#paint0_linear_680_3287)" />
+                    <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M18.1706 0L7.36816 19.704H13.3542L24.1567 0H18.1706Z" fill="url(#paint1_linear_680_3287)" />
+                    <path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M25.5398 0L14.7373 19.704H20.7234L31.5259 0H25.5398Z" fill="url(#paint2_linear_680_3287)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_680_3287" x1="5.13267" y1="-7.42211" x2="-10.1946"
+                            y2="9.91277" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#33D35E" />
+                            <stop offset="1" stop-color="#2AB6D9" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_680_3287" x1="12.5008" y1="-7.42211" x2="-2.82643"
+                            y2="9.91277" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#33D35E" />
+                            <stop offset="1" stop-color="#2AB6D9" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_680_3287" x1="19.87" y1="-7.42211" x2="4.54271" y2="9.91277"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#33D35E" />
+                            <stop offset="1" stop-color="#2AB6D9" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="flex gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M18.8958 0H1.10417C0.494167 0 0 0.494167 0 1.10417V18.8967C0 19.5058 0.494167 20 1.10417 20H10.6833V12.255H8.07667V9.23667H10.6833V7.01083C10.6833 4.4275 12.2608 3.02083 14.5658 3.02083C15.67 3.02083 16.6183 3.10333 16.895 3.14V5.84L15.2967 5.84083C14.0433 5.84083 13.8008 6.43667 13.8008 7.31V9.2375H16.79L16.4008 12.2558H13.8008V20H18.8975C19.5058 20 20 19.5058 20 18.8958V1.10417C20 0.494167 19.5058 0 18.8958 0Z"
+                            fill="white" class="hover:fill-green duration-300 cursor-pointer" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 21 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.333 0C4.81051 0 0.333008 4.4775 0.333008 10C0.333008 15.5225 4.81051 20 10.333 20C15.8555 20 20.333 15.5225 20.333 10C20.333 4.4775 15.8555 0 10.333 0ZM14.0338 14.0767C12.2822 14.1967 8.38051 14.1967 6.63134 14.0767C4.73467 13.9467 4.51384 13.0183 4.49967 10C4.51384 6.97583 4.73717 6.05333 6.63134 5.92333C8.38051 5.80333 12.283 5.80333 14.0338 5.92333C15.9313 6.05333 16.1513 6.98167 16.1663 10C16.1513 13.0242 15.9288 13.9467 14.0338 14.0767ZM12.7638 9.99667L8.66634 8.04833V11.9517L12.7638 9.99667Z"
+                            fill="white" class="hover:fill-green duration-300 cursor-pointer" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 21 18" fill="none">
+                        <path
+                            d="M20.667 2.79746C19.9312 3.12412 19.1403 3.34412 18.3103 3.44329C19.1578 2.93579 19.8087 2.13162 20.1145 1.17329C19.322 1.64329 18.4437 1.98496 17.5087 2.16912C16.7612 1.37162 15.6937 0.873291 14.5137 0.873291C11.8645 0.873291 9.91783 3.34496 10.5162 5.91079C7.10699 5.73996 4.08366 4.10662 2.05949 1.62412C0.984492 3.46829 1.50199 5.88079 3.32866 7.10246C2.65699 7.08079 2.02366 6.89662 1.47116 6.58912C1.42616 8.48996 2.78866 10.2683 4.76199 10.6641C4.18449 10.8208 3.55199 10.8575 2.90866 10.7341C3.43033 12.3641 4.94533 13.55 6.74199 13.5833C5.01699 14.9358 2.84366 15.54 0.666992 15.2833C2.48283 16.4475 4.64033 17.1266 6.95699 17.1266C14.5753 17.1266 18.8795 10.6925 18.6195 4.92162C19.4212 4.34246 20.117 3.61996 20.667 2.79746Z"
+                            fill="white" class="hover:fill-green duration-300 cursor-pointer" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0C4.4775 0 0 4.47667 0 10C0 14.2367 2.63583 17.855 6.35583 19.3117C6.26833 18.5208 6.18917 17.3075 6.39083 16.4442C6.5725 15.6633 7.56333 11.4733 7.56333 11.4733C7.56333 11.4733 7.26417 10.8742 7.26417 9.98833C7.26417 8.59833 8.07 7.56 9.07333 7.56C9.92583 7.56 10.3383 8.20083 10.3383 8.96833C10.3383 9.82583 9.7925 11.1083 9.51 12.2975C9.27417 13.2925 10.0092 14.105 10.9908 14.105C12.7683 14.105 14.1342 12.2308 14.1342 9.52583C14.1342 7.13167 12.4142 5.4575 9.9575 5.4575C7.1125 5.4575 5.4425 7.59167 5.4425 9.79667C5.4425 10.6558 5.77333 11.5783 6.18667 12.0783C6.26833 12.1775 6.28 12.265 6.25583 12.3658L5.97833 13.4992C5.93417 13.6825 5.83333 13.7217 5.64333 13.6333C4.39417 13.0517 3.61333 11.2258 3.61333 9.75917C3.61333 6.605 5.905 3.7075 10.2208 3.7075C13.69 3.7075 16.3858 6.18 16.3858 9.48333C16.3858 12.93 14.2133 15.7033 11.1967 15.7033C10.1833 15.7033 9.23083 15.1775 8.905 14.555L8.28167 16.9325C8.05583 17.8017 7.44667 18.8908 7.03833 19.5542C7.975 19.8433 8.96917 20 10 20C15.5225 20 20 15.5225 20 10C20 4.47667 15.5225 0 10 0Z"
+                            fill="white" class="hover:fill-green duration-300 cursor-pointer" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 21 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.333 0C7.61717 0 7.27717 0.0116667 6.21051 0.06C2.57884 0.226667 0.560508 2.24167 0.393841 5.87667C0.344674 6.94417 0.333008 7.28417 0.333008 10C0.333008 12.7158 0.344674 13.0567 0.393008 14.1233C0.559674 17.755 2.57467 19.7733 6.20967 19.94C7.27717 19.9883 7.61717 20 10.333 20C13.0488 20 13.3897 19.9883 14.4563 19.94C18.0847 19.7733 20.108 17.7583 20.2722 14.1233C20.3213 13.0567 20.333 12.7158 20.333 10C20.333 7.28417 20.3213 6.94417 20.273 5.8775C20.1097 2.24917 18.0922 0.2275 14.4572 0.0608333C13.3897 0.0116667 13.0488 0 10.333 0ZM10.333 1.8025C13.003 1.8025 13.3197 1.8125 14.3747 1.86083C17.0847 1.98417 18.3505 3.27 18.4738 5.96C18.5222 7.01417 18.5313 7.33083 18.5313 10.0008C18.5313 12.6717 18.5213 12.9875 18.4738 14.0417C18.3497 16.7292 17.0872 18.0175 14.3747 18.1408C13.3197 18.1892 13.0047 18.1992 10.333 18.1992C7.66301 18.1992 7.34634 18.1892 6.29217 18.1408C3.57551 18.0167 2.31634 16.725 2.19301 14.0408C2.14467 12.9867 2.13467 12.6708 2.13467 10C2.13467 7.33 2.14551 7.01417 2.19301 5.95917C2.31717 3.27 3.57967 1.98333 6.29217 1.86C7.34717 1.8125 7.66301 1.8025 10.333 1.8025ZM5.19801 10C5.19801 7.16417 7.49717 4.865 10.333 4.865C13.1688 4.865 15.468 7.16417 15.468 10C15.468 12.8367 13.1688 15.1358 10.333 15.1358C7.49717 15.1358 5.19801 12.8358 5.19801 10ZM10.333 13.3333C8.49217 13.3333 6.99967 11.8417 6.99967 10C6.99967 8.15917 8.49217 6.66667 10.333 6.66667C12.1738 6.66667 13.6663 8.15917 13.6663 10C13.6663 11.8417 12.1738 13.3333 10.333 13.3333ZM14.4705 4.6625C14.4705 4 15.008 3.4625 15.6713 3.4625C16.3338 3.4625 16.8705 4 16.8705 4.6625C16.8705 5.325 16.3338 5.8625 15.6713 5.8625C15.008 5.8625 14.4705 5.325 14.4705 4.6625Z"
+                            fill="white" class="hover:fill-green duration-300 cursor-pointer" />
+                    </svg>
+                </div>
+            </div>
+            <div>
+                <nav class="flex items-center flex-col gap-4 text-lg lg:flex-row lg:gap-x-32">
+                    <ul class="flex flex-col items-center gap-4 lg:items-start">
+                        <li class="hover:text-green duration-300 cursor-pointer hover:bg-">About</li>
+                        <li class="hover:text-green duration-300 cursor-pointer">Contact</li>
+                        <li class="hover:text-green duration-300 cursor-pointer">Blog</li>
+                    </ul>
+                    <ul class="flex flex-col items-center gap-4 lg:items-start">
+                        <li class="hover:text-green duration-300 cursor-pointer">Careers</li>
+                        <li class="hover:text-green duration-300 cursor-pointer">Support</li>
+                        <li class="hover:text-green duration-300 cursor-pointer">Privacy Policy</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex flex-col items-center lg:items-end lg:gap-y-6">
+
+                <button
+                    class="bg-gradient-to-br text-white px-9 py-2 rounded-3xl from-linear1 to-linear2 hover:brightness-125">Request
+                    Invite</button>
+                <span class="text-lg text-gray">© Easybank. All Rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

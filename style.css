@@ -1,0 +1,19 @@
+.li:hover {
+    border-bottom: 1px solid;
+    border-image: url(./images/Rectangle.png);
+}
+
+.li::after {
+    content: url(./images/Rectangle.png);
+    display: none;
+    transition-duration: 500ms;
+}
+
+.li:hover::after {
+    display: inline-block;
+    transition-duration: 500ms;
+}
+.btn:hover{
+    background-color: #fff;
+    opacity: 0.5;
+}
